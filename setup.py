@@ -12,6 +12,7 @@ def get_requirements(file_path) -> List[str]:
         requirements = file_obj.readlines()
         requirements = [req.replace('\n', ' ') for req in requirements]
 
+
         if DASH_E_DOT in requirements:
             requirements.remove(DASH_E_DOT)
 
